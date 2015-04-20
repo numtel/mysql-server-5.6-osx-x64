@@ -1,12 +1,10 @@
-# MySQL Server 5.6 for Linux x86 64-bit
+# MySQL Server 5.6 for Mac OSX x86 64-bit
 
 Install and run [MySQL server](http://www.mysql.com) under the current user inside of the application directory.
 
 ```
-npm install mysql-server-5.6-linux-x64
+npm install mysql-server-5.6-osx-x64
 ```
-
-* MySQL prerequisite `libaio` is included in this package and does not need to be installed separately.
 
 Provides function for spawning MySQL server instance with optional configuration settings. Returns [`ChildProcess`](https://nodejs.org/api/child_process.html#child_process_class_childprocess).
 
@@ -14,7 +12,7 @@ Provides function for spawning MySQL server instance with optional configuration
 * `stop()` method added to returned `ChildProcess` instance to stop the server.
 
 ```javascript
-var startMysql = require('mysql-server-5.6-linux-x64');
+var startMysql = require('mysql-server-5.6-osx-x64');
 
 var mysqld = startMysql({ port: 3307 });
 
